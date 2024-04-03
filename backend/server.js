@@ -6,6 +6,8 @@ const mongoose = require('mongoose');
 
 const app = express();
 
+// Allow to get post Request body
+app.use(express.json());
 
 // Adding a middle ware
 app.use((request, response, next) => {
