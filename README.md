@@ -13,14 +13,14 @@ We add this to `package.json` > `scripts`.
 `"dev": "nodemon server"`
 
 
-# Hiding variables
+## Hiding variables
 
 We should create an `.env` file to store variables. We should NOT include this in GitHub repos during production.
 
 Then install `npm install dotenv`. This will allow us to read `.env` file from project.
 
 
-# We added a route handler file with this implementation:
+## We added a route handler file with this implementation:
 
 ```bash
 const express = require('express');
