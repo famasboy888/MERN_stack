@@ -1,3 +1,11 @@
-# This is a MERN stack
+# What is MERN?
 
-Each progress is separated in individual branches.
+MERN stands for the following
+
+- `Mongo DB` 
+
+- `Express`
+
+- `React JS`
+
+- `Node`
