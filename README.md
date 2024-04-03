@@ -1,64 +1,27 @@
-# Starting with the backend
+# Adding mongo DB
 
-We run `npm init` to create initial `package.json` file.
+## Install `Mongoose`
 
-- Install `npm install express`.
+`npm install mongoose`
 
-- Install `npm install nodemon -g`.
-
-## Creating RUN shorcuts
-
-We add this to `package.json` > `scripts`.
-
-`"dev": "nodemon server"`
-
-
-## Hiding variables
-
-We should create an `.env` file to store variables. We should NOT include this in GitHub repos during production.
-
-Then install `npm install dotenv`. This will allow us to read `.env` file from project.
-
-
-## We added a route handler file with this implementation:
+## We added the following to `.env` file:
 
 ```bash
-const express = require('express');
-
-const router = express.Router();
-
-// Get all workouts
-router.get('/', (request, response) => {
-    response.json({msg:"Get workouts"});
-})
-
-// Get single workouts
-router.get('/:id', (request, response) => {
-    response.json({msg:"Get workout id"});
-})
-
-// Post single workouts
-router.post('/', (request, response) => {
-    response.json({msg:"POST new workout"});
-})
-
-// Delete single workouts
-router.delete('/:id', (request, response) => {
-    response.json({msg:"Delete workout"});
-})
-
-// Update single workouts
-router.patch('/:id', (request, response) => {
-    response.json({msg:"Update new workout"});
-})
-
-module.exports = router;
+PORT=4XXX
+MONGO_URI=mongodb+srv://XXXXX@app.3lxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxx
 ```
 
-It will  be called from the main `server.js` using this:
+## We implemented the following connection
 
 ```bash
-const workoutRoutes = require('./routes/workout');
+mongoose.connect(process.env.MONGO_URI)
+    .then(() => {
+        app.listen(process.env.PORT, () => {
+            console.log("Listening to port 4000...ss.");
+        });
+    })
+    .catch((e) => {
+        console.log(e);
+    });
 
-app.use('/api/workouts', workoutRoutes);
 ```
