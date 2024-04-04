@@ -26,8 +26,8 @@ const Home = () => {
                 {workouts && workouts.map((workout) => (
                     <WorkoutDetails key={workout._id} workout={workout} />
                 ))}
-                <WorkoutForm/>
             </div>
+            <WorkoutForm/>
         </div>
     );
 }
