@@ -3,7 +3,7 @@
 ## Home workout list
 
 <p align="center">
-  <img width="80%" height="80%" src="https://github.com/famasboy888/MERN_stack/assets/23441168/d4b8cdaa-a8c7-48b7-9160-fa722f5d175a">
+  <img width="100%" height="100%" src="https://github.com/famasboy888/MERN_stack/assets/23441168/d4b8cdaa-a8c7-48b7-9160-fa722f5d175a">
 </p>
 
 ## Controller structure
