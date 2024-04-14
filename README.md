@@ -1,10 +1,16 @@
-# Creating Controllers
+# MERN Stack
+
+## Home workout list
+
+<p align="center">
+  <img width="80%" height="80%" src="https://github.com/famasboy888/MERN_stack/assets/23441168/d4b8cdaa-a8c7-48b7-9160-fa722f5d175a">
+</p>
+
+## Controller structure
 
 Create a "controllers" directory and a file `workoutController.js`.
 
 We can properly organize files this way.
-
-## Controller structure
 
 We create function for each process (CRUD).
 
